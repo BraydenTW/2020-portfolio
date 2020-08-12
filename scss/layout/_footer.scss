@@ -1,0 +1,17 @@
+.footer{
+    background: #eee;
+    text-align: center;
+}
+
+.footer-links{
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & a{
+        font-size: 1em;
+        margin: 0px 10px;
+        text-decoration: none;
+        color: black;
+    }
+}

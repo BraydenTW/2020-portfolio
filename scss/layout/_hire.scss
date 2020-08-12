@@ -1,0 +1,41 @@
+.hire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: auto;
+    // min-height: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    padding: 120px 20px;
+}
+
+.hire-title{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    color: $title-col;
+}
+
+.hire-para{
+    font-size: 1.3em;
+    line-height: 1.4em;
+    font-weight: 400;
+    color: $text-col;
+    max-width: 600px;
+    width: 100%;
+    & a{
+        color: black;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .hire{
+        font-size: 0.8em;
+    }
+    .hire-para{
+        line-height: 1.6em;
+    }
+}

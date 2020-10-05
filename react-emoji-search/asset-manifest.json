@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/emoji-search/static/css/main.4edf9be3.chunk.css",
+    "main.js": "/emoji-search/static/js/main.4085001c.chunk.js",
+    "main.js.map": "/emoji-search/static/js/main.4085001c.chunk.js.map",
+    "runtime-main.js": "/emoji-search/static/js/runtime-main.eeee5882.js",
+    "runtime-main.js.map": "/emoji-search/static/js/runtime-main.eeee5882.js.map",
+    "static/js/2.adfbd410.chunk.js": "/emoji-search/static/js/2.adfbd410.chunk.js",
+    "static/js/2.adfbd410.chunk.js.map": "/emoji-search/static/js/2.adfbd410.chunk.js.map",
+    "index.html": "/emoji-search/index.html",
+    "precache-manifest.158f4205a90adb77da5541f8d34ce1fd.js": "/emoji-search/precache-manifest.158f4205a90adb77da5541f8d34ce1fd.js",
+    "service-worker.js": "/emoji-search/service-worker.js",
+    "static/css/main.4edf9be3.chunk.css.map": "/emoji-search/static/css/main.4edf9be3.chunk.css.map",
+    "static/js/2.adfbd410.chunk.js.LICENSE.txt": "/emoji-search/static/js/2.adfbd410.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eeee5882.js",
+    "static/js/2.adfbd410.chunk.js",
+    "static/css/main.4edf9be3.chunk.css",
+    "static/js/main.4085001c.chunk.js"
+  ]
+}

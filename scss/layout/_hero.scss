@@ -1,15 +1,9 @@
-@keyframes imgAnim {
-    from {
-        opacity: 0;
-        transform: translateY(200px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
+
+body{
+    background: white;
 }
 
-@keyframes paraAnim {
+@keyframes textAnim {
     from {
         opacity: 0;
         transform: translateY(-200px);
@@ -20,190 +14,101 @@
     }
 }
 
-@keyframes titleAnim {
+@keyframes arrowAnim {
     from {
-        opacity: 0;
-        transform: translateY(-150px);
+        transform: translateY(10px);
     }
-    25% {
-        opacity: 0;
-        transform: translateY(-150px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0px);
+    from {
+        transform: translateY(10px);
     }
 }
 
 .hero{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    max-width: 1100px;
     margin: auto;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
     overflow: hidden;
+    background-attachment: fixed;
     position: relative;
 }
-.hero-deco1{
-    position: absolute;
-    height: 100px;
-    width: 400px;
-    background: radial-gradient(#47517c44 25%, transparent 25%);
-    background-size: 10px 10px;
-    background-repeat: repeat;
-    bottom: 0;
-    left: -50px;
-    z-index: -100;
-}
-.hero-deco2{
-    position: absolute;
-    height: 200px;
-    width: 150px;
-    background: radial-gradient($accent-trans1 25%, transparent 25%);
-    background-size: 10px 10px;
-    background-repeat: repeat;
-    bottom: 0;
-    right: 0px;
-    z-index: -100;
-}
-
 .hero-title{
-    font-size: 3em;
+    font-size: 1.4em;
     line-height: 1.3em;
-    padding-bottom: 20px;
-    font-weight: 750;
+    font-weight: 550;
     color: $title-col;
     width: 100%;
-    animation: titleAnim 2.25s;
 }
 .hero-para{
     font-size: 1.3em;
     line-height: 1.4em;
     font-weight: 400;
     color: $text-col;
-    max-width: 600px;
-    animation: paraAnim 2s;
+    font-weight: 500;
+    padding: 2rem 0;
+}
+
+.hero-name{
+    font-size: 2em;
+    font-weight: 900;
+    line-height: 1.4em;
+}
+
+.hero-cta{
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+    animation: arrowAnim 0.5s infinite alternate-reverse;
+    & a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.8em;
+        transition: box-shadow 0.3s;
+        outline: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 40px;
+        width: 40px;
+        margin: auto;
+        border-radius: 6px;
+        &:focus{
+            box-shadow: 0 0 0 4px $accent-trans1, 0 -6px 12px #ffffff, 0 4px 12px #00000044;
+        }
+    }
 }
 
 .hero-text{
+    text-align: left;
     height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 50%;
-    padding: 0px 20px;
-}
-
-.hero-img{
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    flex-direction: column;
-    animation: imgAnim 2s;
-    & img{
-        width: 100%;
-    }
-}
-
-.hero-social{
-    display: flex;
-    align-items: center;
+    max-width: 600px;
+    margin: auto;
     width: 100%;
-    padding-top: 20px;
+    animation: textAnim 2s;
 }
 
-.hero-social-item{
-    & a {
-        color: black;
-        font-size: 1.05em;
-        border-radius: 50%;
-        height: 45px;
-        width: 45px;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        justify-content: center;
-        text-align: center;
-        transition: transform 0.4s;
-        & i {
-            transition: transform 0.4s;
-        }
-        &:hover{
-            transform: rotateZ(-15deg) scale(1.2);
-        }
-    }
-    &:nth-child(2) {
-        margin: 0px 20px;
-    }
-    &:nth-child(3) {
-        margin: 0px 20px 0px 0px;
-    }
-    &.hero-social-github{
-        & a{
-            background: #000000;
-            color: white;
-        }
-    }
-    &.hero-social-dribbble{
-        & a{
-            background: #ff08b5;
-            color: white;
-        }
-    }
-    &.hero-social-stack{
-        & a{
-            background: #ff8c08;
-            color: white;
-        }
-    }
-    &.hero-social-email{
-        & a{
-            background: #065dff;
-            color: white;
-        }
+@media only screen and (max-width: 660px) {
+    .hero-text{
+        width: auto;
+        padding: 0 20px;
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 500px) {
+    .hero-text{
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .hero-text{
+        padding: 0 10px;
+    }
     .hero-title{
-        font-size: 2.8em;
-        line-height: 1.3em;
-    }
-    .hero-para{
-        font-size: 1.15em;
-        line-height: 1.45em;
-    }
-    .hero-text{
-        min-width: 500px;
-    }
-}
-
-@media only screen and (max-width: 950px) {
-    .hero-title{
-        font-size: 2.4em;
-        line-height: 1.3em;
-    }
-    .hero-para{
-        font-size: 1em;
-        line-height: 1.45em;
-    }
-    .hero-text{
-        min-width: auto;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .hero-text{
-        width: 500px;
-    }
-    .hero-img{
-        display: none;
-    }
-    .hero-deco2{
-        display: none;
+        font-size: 1.2em;
     }
 }

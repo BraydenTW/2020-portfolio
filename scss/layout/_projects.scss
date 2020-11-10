@@ -1,0 +1,104 @@
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #e8e9ee;
+    margin: auto;
+    width: auto;
+    height: auto;
+    position: relative;
+    padding: 50px 20px;
+    text-align: left;
+    & a{
+        margin-top: 35px;
+        color: inherit;
+        text-decoration: none;
+        &:nth-child(2) {
+            margin: 35px 20px 0;
+        }
+    }
+}
+
+.projects-title{
+    & h2{
+        color: black;
+    }
+    width: auto;
+    text-align: center;
+    padding: 0 20px 10px;
+    color: $title-col;
+}
+
+.projects-flex{
+    max-width: 1000px;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    & a{
+        border-radius: 6px;
+        width: 300px;
+        transition: box-shadow 0.3s;
+        outline: none;
+        &:focus{
+            box-shadow: 0 0 0 4px $accent-trans1, 0 -6px 12px #ffffff, 0 4px 12px #00000044;
+        }
+    }
+}
+
+.projects-item{
+    width: 100%;
+    text-align: center;
+    line-height: 1.5em;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    // border: solid 2px black;
+    box-shadow: 0px -2px 8px #ffffff66, 0px 4px 10px #353a5018;
+    background: #ffffff;
+    // color: black;
+}
+
+.projects-img{
+    width: 95%;
+    height: 140px;
+    margin: 0 auto 1em;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    border: solid 3px #00000022;
+    box-shadow: 0px 4px 10px #00000011;
+}
+
+.projects-desc{
+    font-size: 0.9em;
+}
+
+@media only screen and (max-width: 1100px) {
+    .projects-flex a{
+        width: 290px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .projects-flex{
+        flex-direction: column;
+        margin: 35px 0;
+        & a{
+            margin-top: 0px;
+            width: auto;
+            max-width: 380px;
+            color: inherit;
+            text-decoration: none;
+            font-size: 1.1em;
+            &:nth-child(2) {
+                margin: 35px 0;
+            }
+        }
+    }
+
+    .projects-img{
+        height: 197px;
+    }
+}

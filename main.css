@@ -1,0 +1,38 @@
+.hero-btn{
+    position: relative;
+    transition: color 0.3s;
+}
+
+.hero-btn:hover:before{
+    opacity: 1;
+}
+
+.hero-btn:nth-child(1):before{
+    background: linear-gradient(to top right, #000000, #444);
+}
+
+.hero-btn:nth-child(2):before{
+    background: linear-gradient(to top right, #ff6acd, #ff41c0);
+}
+
+.hero-btn:nth-child(3):before{
+    background: linear-gradient(to top right, #4400ff, #00e1ff);
+}
+
+.hero-btn:nth-child(4):before{
+    background: linear-gradient(to top right, #ff7b00, #ffd900);
+}
+
+.hero-btn:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s;
+    filter: blur(5px);
+}

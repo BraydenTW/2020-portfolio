@@ -1,41 +1,73 @@
 .hire{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 900px;
-    margin: auto;
-    // min-height: 100%;
-    height: auto;
-    overflow: hidden;
     position: relative;
     padding: 120px 20px;
 }
 
-.hire-title{
-    width: 100%;
-    text-align: center;
-    padding-bottom: 20px;
-    color: $title-col;
+.hire-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 700px;
+    width: auto;
+    margin: auto;
 }
 
-.hire-para{
-    font-size: 1.3em;
-    line-height: 1.4em;
-    font-weight: 400;
-    color: $text-col;
-    max-width: 600px;
-    width: 100%;
-    & a{
-        color: black;
+.hire-text{
+    text-align: left;
+    max-width: 350px;
+    & h1{
+        color: $title-col;
+        line-height: 1.3em;
     }
-}
-
-@media only screen and (max-width: 950px) {
-    .hire{
-        font-size: 0.8em;
-    }
-    .hire-para{
+    & p{
+        font-size: 1.1em;
         line-height: 1.6em;
+        font-weight: 400;
+        color: $text-col;
+        font-weight: 500;
+        padding: 1rem 0;
+    }
+}
+
+.hire-cta{
+    & a{
+        background: $accent;
+        padding: 14px 28px;
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+        white-space: nowrap;
+        transition: background 0.3s, box-shadow 0.3s;
+        outline: none;
+        &:focus{
+            box-shadow: 0 0 0 4px $accent-trans1, 0 -6px 12px #ffffff, 0 4px 12px #00000044;
+        }
+        &:hover{
+            background: $blue;
+        }
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .hire-inner{
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 300px;
+    }
+    .hire-cta{
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .hire-inner{
+        font-size: 0.85em;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .hire-text h1{
+        font-size: 1.5em;
     }
 }

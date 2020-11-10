@@ -8,7 +8,6 @@
     <meta name="google-site-verification" content="ll7LfpXU2_1dNxBEON0gs_41Mo5N1CwvbHbo5ejVONA" />
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
@@ -18,133 +17,276 @@
     <meta name="msapplication-TileColor" content="#2d89ef">
     <meta name="msapplication-config" content="/icon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        #bmc-wbtn{transition: transform 2.5s;}
+    </style>
 </head>
 <body>
     <div class="content">
         <div class="hero">
-            <div class="hero-deco1"></div>
-            <div class="hero-deco2"></div>
             <div class="hero-text">
                 <div class="hero-title">
-                    Hey 👋,
+                    Hey 👋
                     <br>
-                    I'm Brayden
+                    <p class="hero-name">
+                        I'm Brayden.
+                    </p>
                 </div>
                 <div class="hero-para">
-                    I've been a Front-end Developer/Designer for over four years. I love coding things that make the lives of developers easier.
-                    <div class="hero-social">
-                        <div class="hero-social-item hero-social-github">
-                            <a href="https://github.com/braydentw" title="My GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                        <div class="hero-social-item hero-social-dribbble">
-                            <a href="https://dribbble.com/braydentw" title="My Dribbble">
-                                <i class="fab fa-dribbble"></i>
-                            </a>
-                        </div>
-                        <div class="hero-social-item hero-social-stack">
-                            <a href="https://stackoverflow.com/users/12198209/brayden-w?tab=profile" title="My StackOverflow">
-                                <i class="fab fa-stack-overflow"></i>
-                            </a>
-                        </div>
-                        <div class="hero-social-item hero-social-email">
-                            <a href="mailto:brayden45.dev@gmail.com" title="Email me 📧">
-                                <i class="far fa-envelope"></i>
-                            </a>
-                        </div>
-                    </div>
+                    <p>
+                        I'm a passionate <b>web developer</b> and <b>designer</b>. I also love freelancing and contributing to open-source.
+                    </p>
+                    <br>
+                    <p>
+                        Scroll down to hear more! 👇
+                    </p>
                 </div>
             </div>
-            <div class="hero-img">
-                <img src="./img/hero.png" alt="Web developers illustration">
+            <div class="hero-cta">
+                <a href="#next" data-scroll><i class="fas fa-chevron-down"></i></a>
             </div>
         </div>
-        <div class="skills">
+        <div class="skills" id="next">
             <div class="skills-flex">
                 <div class="skills-title">
-                    <h2>My Skills</h2>
+                    <h2>Tech I Use</h2>
                 </div>
                 <div class="skills-flex-inner">
                     <div class="skills-deco1"></div>
                     <div class="skills-deco2"></div>
-                    <div class="skills-flex-item" data-aos="fade-down" data-aos-duration="1200">
-                        <div class="skills-item-icon">
-                            <i class="fas fa-code"></i>
+                    <a href="https://html.spec.whatwg.org/">
+                        <div class="skills-flex-item">
+                            <div class="skills-item-icon">
+                                <i class="fab fa-html5" style="color: #ff6600;"></i>
+                            </div>
+                            <div class="skills-item-title">
+                                HTML5
+                            </div>
                         </div>
-                        <div class="skills-item-title">
-                            Front-end Development
+                    </a>
+                    <a href="https://sass-lang.com/">
+                        <div class="skills-flex-item">
+                            <div class="skills-item-icon">
+                                <i class="fab fa-sass" style="color: #ff0095;"></i>
+                            </div>
+                            <div class="skills-item-title">
+                                Sass
+                            </div>
                         </div>
-                    </div>
-                    <div class="skills-flex-item" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="100">
-                        <div class="skills-item-icon">
-                            <i class="fas fa-palette"></i>
+                    </a>
+                    <a href="https://javascript.com">
+                        <div class="skills-flex-item">
+                            <div class="skills-item-icon">
+                                <i class="fab fa-js-square" style="color: #ffc400;"></i>
+                            </div>
+                            <div class="skills-item-title">
+                                JavaScript
+                            </div>
                         </div>
-                        <div class="skills-item-title">
-                            Design/UX
+                    </a>
+                    <a href="https://tailwindcss.com/">
+                        <div class="skills-flex-item">
+                            <div class="skills-item-icon icon-tailwind"></div>
+                            <div class="skills-item-title">
+                                TailwindCSS
+                            </div>
                         </div>
-                    </div>
-                    <div class="skills-flex-item" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="200">
-                        <div class="skills-item-icon">
-                            <i class="fab fa-git-alt"></i>
+                    </a>
+                    <a href="https://adobe.com">
+                        <div class="skills-flex-item">
+                            <div class="skills-item-icon">
+                                <i class="fab fa-adobe" style="color: #ff0000;"></i>
+                            </div>
+                            <div class="skills-item-title">
+                                Adobe CC
+                            </div>
                         </div>
-                        <div class="skills-item-title">
-                            Git
+                    </a>
+                    <a href="https://reactjs.org">
+                        <div class="skills-flex-item">
+                            <div class="skills-item-icon">
+                                <i class="fab fa-react" style="color: #61dafb;"></i>
+                            </div>
+                            <div class="skills-item-title">
+                                ReactJS
+                            </div>
                         </div>
-                    </div>
-                    <div class="skills-flex-item" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="300">
-                        <div class="skills-item-icon">
-                            <i class="fab fa-figma"></i>
+                    </a>
+                    <a href="https://gatsbyjs.com">
+                        <div class="skills-flex-item">
+                            <div class="skills-item-icon">
+                                <div class="skills-item-icon icon-gatsby"></div>
+                            </div>
+                            <div class="skills-item-title">
+                                GatsbyJS
+                            </div>
                         </div>
-                        <div class="skills-item-title">
-                            Figma
+                    </a>
+                    <a href="https://git-scm.com">
+                        <div class="skills-flex-item">
+                            <div class="skills-item-icon">
+                                <i class="fab fa-git-alt" style="color: #ff1e00;"></i>
+                            </div>
+                            <div class="skills-item-title">
+                                Git
+                            </div>
                         </div>
-                    </div>
-                    <div class="skills-flex-item" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="400">
-                        <div class="skills-item-icon">
-                            <i class="fab fa-react"></i>
+                    </a>
+                    <a href="https://nodejs.org">
+                        <div class="skills-flex-item">
+                            <div class="skills-item-icon">
+                                <i class="fab fa-node-js" style="color: #72a962;"></i>
+                            </div>
+                            <div class="skills-item-title">
+                                NodeJS
+                            </div>
                         </div>
-                        <div class="skills-item-title">
-                            ReactJS
+                    </a>
+                    <a href="https://figma.com">
+                        <div class="skills-flex-item">
+                            <div class="skills-item-icon">
+                                <i class="fab fa-figma" style="color: #292929;"></i>
+                            </div>
+                            <div class="skills-item-title">
+                                Figma
+                            </div>
                         </div>
-                    </div>
-                    <div class="skills-flex-item" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="500">
-                        <div class="skills-item-icon">
-                            <i class="fab fa-node-js"></i>
-                        </div>
-                        <div class="skills-item-title">
-                            NodeJS
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="hire">
-            <div class="hire-title">
-                <h2>Questions?</h2>
+        <div class="work">
+            <div class="work-title">
+                <h2>Client Work</h2>
             </div>
-            <div class="hire-para" data-aos="fade-up" data-aos-duration="1200">
-                Send me an email at <a href="mailto:brayden45.dev@gmail.com">brayden45.dev@gmail.com</a> if you need my assistance. I'm open to giving feedback on your designs and helping you with your coding problems.
+            <a class="work-a1" href="https://digitalrights.us/" rel="noreferrer noopener" target="_blank">
+                <img width="100%" alt="digitalrights.us" class="work-item work-dr">
+            </a>
+            <a class="work-a2" href="https://financepond.com/" rel="noreferrer noopener" target="_blank">
+                <img width="100%" alt="financepond.com" class="work-item work-fp">
+            </a>
+        </div>
+        <div class="projects">
+            <div class="projects-title">
+                <h2>My Projects</h2>
+            </div>
+            <div class="projects-flex">
+                <a href="https://buildfaster.co">
+                    <div class="projects-item">
+                        <div class="projects-img" style="background-image: url(/img/bf.png)"></div>
+                        <div class="projects-item-title">
+                            <h4>BUILDFASTER.CO</h4>
+                        </div>
+                        <div class="projects-desc">
+                            <p>
+                                Premium HTML templates for your next awesome website.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/braydentw/react-tailwind-portfolio">
+                    <div class="projects-item">
+                        <div class="projects-img" style="background-image: url(/img/rtp.png)"></div>
+                        <div class="projects-item-title">
+                            <h4>REACT-TAILWIND-PORTFOLIO</h4>
+                        </div>
+                        <div class="projects-desc">
+                            <p>
+                                An open-source portfolio template built with React and Tailwind.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/BraydenTW/react-emoji-search">
+                    <div class="projects-item">
+                        <div class="projects-img" style="background-image: url(/img/res.png)"></div>
+                        <div class="projects-item-title">
+                            <h4>REACT-EMOJI-SEARCH</h4>
+                        </div>
+                        <div class="projects-desc">
+                            <p>
+                                An open-source emoji search tool made with ReactJS.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="hire">
+            <div class="hire-inner">
+                <div class="hire-text" data-aos="fade-right" data-aos-duration="1000" data-aos-anchor-placement="top-center">
+                    <h1>
+                        Interested
+                        <br>
+                        in Collaboration?
+                    </h1>
+                    <p>
+                        Feel free to send me an email. I'll try to respond as soon as possible.
+                    </p>
+                </div>
+                <div class="hire-cta" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400" data-aos-anchor-placement="top-center">
+                    <a href="mailto:brayden45.dev@gmail.com">Let's Talk &nbsp;&nbsp;&nbsp;&nbsp; <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
         </div>
     </div>
     <footer class="footer">
+        <a class="bmcbtnf" href="https://www.buymeacoffee.com/braydenw" target="_blank" title="Thank you for visiting. If you like my work, I would appreciate it if you buy me a coffee. ☕"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 48px !important;width: 173.6px !important;" ></a>
         <div class="footer-links">
-            <a href="https://github.com/braydentw" title="My GitHub">
+            <a href="https://github.com/braydentw" title="My GitHub" style="background: #111111;">
                 <i class="fab fa-github"></i>
             </a>
-            <a href="https://dribbble.com/braydentw" title="My Dribbble">
+            <a href="https://dribbble.com/braydentw" title="My Dribbble" style="background: #ff26b7;">
                 <i class="fab fa-dribbble"></i>
             </a>
-            <a href="https://stackoverflow.com/users/12198209/brayden-w?tab=profile" title="My StackOverflow">
+            <a href="https://stackoverflow.com/users/12198209/brayden-w?tab=profile" title="My StackOverflow" style="background: #fd7a00;">
                 <i class="fab fa-stack-overflow"></i>
             </a>
-            <a href="mailto:brayden45.dev@gmail.com" title="Email me 📧">
+            <a href="https://dev.to/braydentw" title="My Dev.to" style="background: #696969;">
+                <i class="fab fa-dev"></i>
+            </a>
+            <a href="mailto:brayden45.dev@gmail.com" title="Email me 📧" style="background: #0044ff;">
                 <i class="far fa-envelope"></i>
             </a>
         </div>
+        Made with 🖤 by Brayden
     </footer>
+    <script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="braydenw" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting. If you like my work, I would appreciate it if you buy me a coffee. ☕" data-color="#FFDD00" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./js/defaults.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="/js/scripts.min.js"></script>
+    <script>
+        // function isScrolledIntoView(elem)
+        //     {
+        //         var docViewTop = $(window).scrollTop();
+        //         var docViewBottom = docViewTop + $(window).height();
+
+        //         var elemTop = $(elem).offset().top;
+        //         var elemBottom = elemTop + $(elem).height();
+
+        //         return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+        //     }
+
+        let isInViewport = function (elem) {
+            let bounding = elem.getBoundingClientRect();
+            return (
+                bounding.top >= 0 &&
+                bounding.left >= 0 &&
+                bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        };
+
+        const bmcbtn = document.querySelector('.bmcbtnf');
+        window.addEventListener('scroll', function (event) {
+            if (isInViewport(bmcbtn)) {
+                document.getElementById("bmc-wbtn").style.transform = "translateY(200px)"
+            } else {
+                document.getElementById("bmc-wbtn").style.transform = "translateY(0px)"
+            }
+        }, false);
+
+    </script>
 </body>
 </html>

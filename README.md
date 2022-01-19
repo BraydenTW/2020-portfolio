@@ -1,10 +1,5 @@
-# braydentw.github.io
+# 2020 Portfolio
 
-Hey there! 👋
+Just an old portfolio website I made back in 2020.
 
-My name's Brayden. I'm a Front-End Developer/Designer and this is my portfolio website.
-
-If you would like to help contribute, create a Pull Request or submit an issue describing what should be fixed.
-
-Thanks, <br>
-Brayden 😎
+View here: https://2020-portfolio.vercel.app
